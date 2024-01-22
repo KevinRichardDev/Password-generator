@@ -26,7 +26,7 @@ function generatePassword() {
   passwordOutput.value = password;
 
   passwordOutput.select();
-  document.execCommand("copy");
+  navigator.clipboard.writeText(passwordOutput.value);
 
   generateButton.textContent = "Copié !";
 
